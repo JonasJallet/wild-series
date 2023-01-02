@@ -1,16 +1,23 @@
-// assets/styles/global.scss
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 // customize some Bootstrap variables
-$primary: darken(#428bca, 20%);
-$secondary: darken(#60788d, 20%);
+$black: #000000;
+$main: #4850f2;
+$light: #fff;
+
+$theme-colors: (
+    "black": $black,
+    "mainPink" : $main,
+);
 
 // the ~ allows you to reference things in node_modules
 @import "~bootstrap/scss/bootstrap";
 
 body {
-    background-color: rgb(253, 217, 217);
+    background-color: #f3d8c0;
 }
 
-img.poster {
-    width: 300px;
+.poster {
+    width: 200px;
+    height: 300px;
 }
